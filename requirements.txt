@@ -1,2 +1,3 @@
 Beautifulsoup
 requests
+img2pdf
