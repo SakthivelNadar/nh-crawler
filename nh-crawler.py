@@ -8,9 +8,10 @@ import os
 
 uinput = input("Enter NH code / link:  ")
 
-if len(uinput) == 6:
+try: 
+    uinput = int(uinput)
     link = f"https://nhentai.net/g/{uinput}"
-else:
+except ValueError:
     link = uinput
 
 page = get(link).text
